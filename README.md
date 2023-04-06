@@ -1,2 +1,1 @@
-
-# openai-quickstart-node
+https://crossfit-workout.vercel.app/
