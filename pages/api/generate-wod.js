@@ -17,5 +17,9 @@ export default async function (req, res) {
 }
 
 function generatePrompt(programming) {
-  return `generate a ${programming}-focused CrossFit program, generate the warm-up, workout, and finisher.`;
+  return `generate a ${programming}-focused CrossFit program, 
+          generate the stretching, mobility, warm-up, workout of the day, and finisher. 
+          indicates the number of minutes for each party.
+          if there are bar or bumbell weights, indicates the weight in kg or in maximum percentage
+          `;
 }

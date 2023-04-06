@@ -29,7 +29,8 @@ export default function Wod() {
         throw data.error || new Error(`Request failed with status ${response.status}`);
       }
 
-      setResult(data.result.replaceAll('\\n', '<br />'));
+      setResult(data.result.replaceAll('\n', '<br />'));
+
     } catch(error) {
       // Consider implementing your own error handling logic here
       console.error(error);
@@ -43,11 +44,11 @@ export default function Wod() {
     <div>
       <Head>
         <title>Generate Workout</title>
-        <link rel="icon" href="/dog.png" />
+        
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
+      <img src="/loading.gif" className={styles.loading} />
         <h3>Crossfit workout generator</h3>
 
         <form onSubmit={onSubmit}>
