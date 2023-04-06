@@ -62,8 +62,7 @@ export default function Wod() {
 
         {loading && (
           <div>
-            <h3>Looking for the best gift ideas 🎁 💡</h3>
-            <img src="/loading.gif" className={styles.loading} />
+            <h3>Looking for the best workout ideas 🎁 💡</h3>
           </div>
         )}
         <div
